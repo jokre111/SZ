@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_460544_732fpl5a9lbfyldi.css">
+	<style type="text/css">
+	*{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none
+	}
+    .header{
+       	background: -webkit-linear-gradient(right,#4876FF,#1C86EE);
+       	height: 67px
+    }
+    .h_img{
+    	margin-top: 10px;
+    	float: left;
+    }
+    .h_form{
+    	float: left;
+    	background: #B4CDCD;
+    	width: 280px;
+    	height: 32px;
+    	border-radius: 5px;
+    	margin-top: 17px;
+    	margin-left: 20px
+    }
+    .h_input{
+    	outline: none;
+    	border: 0;
+    	background: #B4CDCD;
+    }
+    .h_a{
+        text-decoration: none;
+        color: #9370DB;
+        font-size: 12px;
+        height: 32px;
+        line-height: 32px;
+        padding: 0 15px 0 10px;
+        transition: all .5s;
+        position: relative;
+    }
+    .h_span{
+    	width: 0;
+    	height: 0;
+    	border-width: 4px 3px;
+    	border-color: #fff transparent transparent transparent;
+    	border-style: solid;
+    	transition: all .5s;
+    	position: absolute;
+    	top:5px;
+    	left: 83px
+    }
+    .h_a:hover{
+    	color: #fff
+    }
+    .h_a:hover .h_span{
+    	border-color: #fff transparent transparent transparent;
+    	transform: rotate(180deg);
+    }
+    .h_button{
+    	float: right;
+    }
+    .h_alist{
+    	line-height: 67px;
+    	color: #C2C2C2;
+    	float: right;
+    	font-size: 12px;
+    	text-decoration: none;
+    	margin: 0 5px
+    }
+    .h_alist:hover{
+    	color: #fff
+    }
+    .floor_one{
+    	height: 45px;
+    	border-bottom: 1px solid #EEDFCC;
+    	line-height: 45px
+    }
+    .f_o_a{
+    	float: left;
+    	font-size: 14px;
+    	text-decoration: none;
+    	color: #333;
+    	padding: 0 30px;
+    }
+    .f_o_a:nth-child(2){
+    	color: #0091d9;
+    	padding-right: 20px
+    }
+    .f_o_a:nth-child(2):hover .arrow{
+    	border-color: transparent transparent #B22222 #B22222;
+    	transform: rotate(-225deg);
+    }
+    .f_o_a:nth-child(6):hover .arrow{
+    	border-color: transparent transparent #B22222 #B22222;
+    	transform: rotate(-225deg);
+    }
+    .floor_one a:hover{
+    	color: 	#FFD700
+    }
+    .arrow{
+    	position: absolute;
+    	width: 5px;
+    	height: 5px;
+    	border-width: 2px;
+    	border-color: transparent transparent #A8A8A8 #A8A8A8;
+    	border-style: solid;
+    	transform: rotate(-45deg);
+    	margin:16px 0 0 5px;
+    	transition: all .3s;
+    }
+    .f_r_a{
+    	float: right;
+    	text-decoration: none;
+    	line-height: 45px;
+    	color: #333;
+    	padding: 0 30px;
+    	font-size:14px;
+    	box-sizing: border-box;
+    }
+    .icon-logistic{
+    	color: #45b4eb;
+    	margin-right: 3px
+    }
+    .floor_t_p{
+    	color: #666;
+    	font-size: 12px;
+    	line-height: 30px
+    }
+    .floor_t_p:hover{
+    	cursor: pointer;
+    }
+    .icon-jiantouyou{
+    	font-size: 12px;
+    	color: #777
+    }
+    .suzhou{
+    	font-size: 30px;
+    	color: #111;
+    	display: block;
+    }
+    .sz{
+    	color: #666;
+    	font-size: 20px;
+    	display: block;
+    }
+    a{
+    	text-decoration: none;
+    }
+    .floor_two_wrap{
+    	float: right;
+    }
+    .floor_two_a{
+    	display: inline-block;
+    	vertical-align: middle;
+    	position: relative;
+    	transition: all .8s
+    }
+    .circleo{
+    	font-size: 60px;
+    	color:#f381c2;
+    	z-index: 1
+    }
+    .floor_t_to{
+    	color: white;
+        position: absolute;
+        left: 22px;
+        top:30px;
+        z-index: 2
+    }
+    .floor_two_a:hover{
+    	transform: rotateY(180deg);
+    }
+    .floor_two{
+    	position: relative;
+    	height: 150px
+    }
+    .circlet{
+    	font-size: 60px;
+    	color: #af93f5
+    }
+    .circlef{
+    	font-size: 60px;
+    	color: #52ccae
+    }
+    .floor_two_wrap{
+    	position: absolute;
+    	right: 0;
+    	top:31px;
+    }
+    .content_header{
+    	font-size: 14px;
+    	background: rgba(75,86,92,.85);
+    	line-height: 44px;
+    }
+    .content_header span{
+    	line-height: 38px;
+    	color: #fff;
+    	display: inline-block;
+    	margin: 0 15px;
+    }
+    .content_header span:hover{
+    	cursor: pointer;
+    	border-bottom: 3px solid #EE7942
+    }
+    .icon-re{
+    	line-height: 10px;
+    	position: absolute;
+    	font-size: 20px;
+    	left: 58px;
+    }
+    .content_header span:nth-child(2){
+    	position: relative;
+    }
+    .icon-shu{
+    	color: #fff;
+    	outline: none;
+    }
+    .artical{
+    	float: left;
+    	margin-top: 30px;
+    	width: 830px
+    }
+    .img_wrap{
+    	font-size: 0;
+    	height: 295px;
+    	width: 3150px
+    }
+    .img_wrap img{
+    	float: left;
+    }
+    .imgg{
+    	width: 525px;
+    	overflow: hidden;
+    	float: left;
+    }
+    .about_sz{
+    	float: left;
+    	padding-left: 30px;
+    	width: 300px;
+    	box-sizing: border-box;
+    }
+    .about_sz h1{
+    	font-size: 24px;
+    	color: #111;
+    	font-weight: 500;
+    }
+    .sz_star a{
+    	color: #0091d9;
+    	font-size: 12px;
+    }
+    .sz_star a:hover{
+    	color: #333
+    }
+    .icon-ITquanxian{
+    	color: black!important
+    }
+    .sz_p{
+    	word-wrap: break-word;
+    	color: #666;
+    	font-size: 12px;
+    	margin-top: 20px;
+    	line-height: 1.5em
+    }
+    .sz_option1{
+    	margin-top: 10px;
+    	font-size: 12px;
+    	color: #666;
+    	line-height: 12px
+    }
+    .sz_box{
+    	text-align: center;
+    	line-height: 32px;
+    	color: #1899f5;
+    	margin-left: 10px;
+    	display: inline-block;
+    	vertical-align: middle;
+    	padding-left: 30px;
+    	width: 120px;
+    	height: 32px;
+    	position: relative;
+    	border:1px solid #1899f5;
+    	border-radius: 3px
+    }
+    .sz_option1:nth-child(3){
+    	display: block;
+    }
+    .boxinbox{
+    	width: 32px;
+    	height: 32px;
+        background: #1899f5;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: white;
+        text-align: center;
+        line-height: 32px
+    }
+    .artical_a{
+    	width: 830px;
+    	margin-top: 10px;
+    	float: left
+    }
+    .artical_aspan{
+    	font-size: 30px;
+    	color: #111;
+    }
+    .tr1:hover{
+    	cursor: pointer;
+    	color: #444;
+    	border-bottom: 1px solid #0091d9
+    }
+    .tr1{
+    	font-size: 14px;
+    	display: inline-block;
+    	margin-left: 15px;
+    	color: #0091d9;
+    	line-height: 36px;
+    	border-bottom: 1px solid transparent
+    }
+    .tr_pic1{
+    	display: block;
+    	width: 830px;
+    }
+    .tr_pic img:hover {
+        cursor: pointer;
+    }
+    .tiw1:hover .tis{
+    	display: block;
+    }
+    .tiw1{
+    	width: 260px;
+    	height: 145px;
+    	position: relative;
+    }
+    .tis{
+    	display: none;
+    	position: absolute;
+    	top: 70px;
+    	left: 90px;
+    	background: rgba(0,0,0,.8);
+    	border-radius: 20px;
+    	font-size: 12px;
+    	color: #fff;
+    	height: 22px;
+    	line-height: 22px;
+    	letter-spacing: 1px;
+    	padding: 3px 10px;
+    	transition: all .3s
+    }
+    .tiw1,.tiw2{
+    	float: left
+    }
+    .tiw2{
+    	margin-left: 30px;
+    }
+    .tiw2 h1{
+    	font-size: 20px;
+    	font-weight: 400
+    }
+    .tiw2 p{
+    	margin-top: 10px;
+    	font-size: 12px
+    }
+    .tiw2 p i{
+    	color: red
+    }
+    .tiw3{
+    	float: right;
+    }
+    .bodw{
+    	float: left;
+    	position: relative;
+    	margin-top:10px;
+    	width: 830px;
+    }
+    .clearfix:after{
+    	content:".";
+    	display:block;
+    	height:0;
+    	clear:both;
+    	visibility:hidden
+    }
+    .tr_pic2{
+    	display: none
+    }
+    .tiw2_s1{
+    	background: #97e0ce;
+    	color: #fff;
+        padding: 0 5px;
+        font-size: 12px;
+        line-height: 19px;
+        border-radius: 2px;
+        font-family: "microsoft yahei";
+        display: inline-block;
+    }
+    .tiw2_s2{
+    	background: #cfbef9;
+    	color: #fff;
+        padding: 0 5px;
+        font-size: 12px;
+        line-height: 19px;
+        border-radius: 2px;
+        font-family: "microsoft yahei";
+        display: inline-block;
+    }
+    .tiw2_s3{
+    	background: #ffc466;
+    	color: #fff;
+        padding: 0 5px;
+        font-size: 12px;
+        line-height: 19px;
+        border-radius: 2px;
+        font-family: "microsoft yahei";
+        display: inline-block;
+    }
+    .tiw4{
+    	float: left;
+    	width: 1000px;
+    }
+    .bodwb{
+    	font-size: 12px;
+    	color: #666;
+    	margin-top: 20px;
+    	width: 100%;
+    	text-align: center;
+    	background: #f8f8f8;
+    	padding: 10px
+    }
+    .aside{
+    	width: 150px;
+    	height: 2000px;
+    	border-left: 1px solid black;
+    	float: right;
+    }
+    .bkcg{
+    	float: left;
+    	margin-top: 50px;
+    	width: 830px;
+    }
+    .bkcg h1{
+        font-weight : 400;
+    }
+    .blist_o{
+    	width: 260px;
+    	height: 579px;
+    	margin-top: 20px;
+    	margin-left: 20px
+    }
+    .nmb{
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        display: block;
+        text-align: center;
+        width: 230px;
+        position: relative;
+    }
+    .cnm{
+    	line-height: 58px;
+    	padding: 0 10px;
+    	background: #fafafa;
+    	z-index: 2;
+    	position: relative;
+    }
+    .blist_o i{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 28px;
+        border-bottom: 1px solid #666;
+        z-index: 1
+    }
+    .blist_o_o a{
+    	width: 230px;
+    	height: 95px;
+    	overflow: hidden;
+    	position: relative;
+    }
+    .blist_o_o img:hover{
+    	transform: scale(1.2);
+    }
+    #blist_o_o_s{
+    	background: #ff9c00;
+    	color:#fff;
+    	font-size: 12px;
+    	height: 25px;
+    	text-align: center;
+    	padding: 0 9px;
+    	line-height: 25px;
+    	position: absolute;
+    	top: 0;
+    	left: 0
+    }
+    #blist_o_o_s2{
+    	background: #ff9c00;
+    	color:#fff;
+    	font-size: 12px;
+    	height: 25px;
+    	text-align: center;
+    	padding: 0 9px;
+    	line-height: 25px;
+    	position: absolute;
+    	bottom: 0;
+    	right: 0
+    }
+    .blist_o_od{
+    	position: relative;
+    	width: 230px;
+    }
+    .blist_o_od span{
+        position: absolute;
+        top: 10px;
+        right: 0;
+        color: #666;
+        font-size: 12px;  
+    }
+    .blist_o_od p{
+    	font-size: 14px;
+    	padding-top: 20px
+    }
+    .blist_o_o_next{
+    	color: #666;
+    	font-size: 12px;
+    	border: 1px solid #FFF0F5;
+    	width: 230px;
+    	height: 34px;
+    	display: block;
+    	margin-top: 10px;
+    	text-align: center;
+    	line-height: 34px;
+    }
+    .blist_o_o_next:hover{
+    	color: #fff;
+    	background: #ff9c00;
+    	cursor: pointer;
+    }
+    .lxhc{
+    	float: left;
+    }
+    .lxhc_span{
+    	color: #17a1e6;
+    	font-size: 12px;
+    	margin-left: 10px;
+    }
+    .lxhc_wrap{
+    	width: 830px;
+    	line-height: 60px;
+    	border-bottom: 1px solid #FFFFE0
+    }
+    .lxhc_spant{
+    	float: right;
+    	width: 75px;
+    	height: 30px;
+    	color: #ff8300;
+    	font-size: 12px;
+    	border: 1px solid #ff8300;
+    	border-radius: 2px;
+    	text-align: center;
+    	line-height: 30px
+    }
+    .lxhc_spant:hover{
+    	background: #ff8300;
+    	color: #fff;
+    	cursor: pointer;
+    }
+    .lxhc_pic{
+    	float: left;
+    	width: 830px;
+    	margin-top: 20px;
+    }
+    .lxhc_pic1{
+    	width: 260px;
+    	position: relative;
+    }
+    .lxhc_pic1_s{
+    	display: block;
+    	background: rgba(0,0,0,.8);
+    	border-radius: 20px;
+    	font-size: 12px;
+    	color: #fff;
+    	line-height: 22px;
+    	padding: 3px 10px;
+    	position: absolute;
+    	left: 40%;
+    	top: 40%;
+    }
+    .lxhc_pic1_sc{
+    	display: none;
+    	background: rgba(0,0,0,.8);
+    	border-radius: 20px;
+    	font-size: 12px;
+    	color: #fff;
+    	line-height: 22px;
+    	padding: 3px 10px;
+    	position: absolute;
+    	left: 23%;
+    	top: 40%;
+    }
+    .lxhc_text1 img{
+    	width: 50px;
+    	height: 50px;
+    	border-radius:  30px;
+    	margin: 0 auto
+    }
+    img{
+    	display: block;
+    }
+    .lxhc_text1{
+    	text-align: center;
+    	margin-top: -25px;
+    }
+    .lxhc_p{
+    	margin-top: 10px;
+    }
+    .lxhc_s{
+    	font-size: 12px;
+    	color: #666
+    }
+    .youji_last{
+    	margin-top: 30px;
+    	color: #666;
+    	width: 830px;
+    	float: left;
+    	text-align: center;
+    	font-size: 12px;
+    	background: #F0F0F0;
+    	line-height: 38px;
+    }
+    .youji{
+    	width: 830px;
+    	float: left;
+    	margin-top: 20px;
+    	padding-bottom: 10px;
+    	border-bottom: 1px solid #EEE5DE
+    }
+    .youji_content{
+    	width: 830px;
+    	float: left;
+    	margin-top: 20px;
+    }
+    .youji_content span{
+    	padding-left: 10px;
+    }
+    .youji_s1{
+    	font-size: 14px;
+    	display: inline-block;
+    }
+    .youji_s2{
+    	color: #999;
+    	display: inline-block;
+    	height: 26px;
+    	line-height: 26px;
+    	border: 1px solid #dedede;
+    	padding: 0 10px;
+    	font-size: 12px;
+    	border-radius: 5px;
+    	position: relative;
+    	width: 66px;
+    	margin-left: 10px;
+    	z-index: 2
+    }
+    .youji_s2_i{
+    	display: inline-block;
+    	border-color: #999 transparent transparent transparent;
+    	border-width: 3px;
+    	border-style: solid;
+    }
+    .youji_s2_ul{
+    	display: none;
+        width: 86px;
+        position: absolute;
+        padding-top: 5px;
+        left: -1px;
+        top: 24px;
+        background: #fff;
+        border: 1px solid #dedede;
+        border-top: 0
+    }
+    .youji_s2:hover .youji_s2_ul{
+    	display: block;
+    	
+    }
+    .youji_s2:hover{
+    	color: #0f78c3;
+    	cursor: pointer;
+    }
+    .youji_s2_ul li{
+    	text-align: center;
+    }
+    .youji_s2_ul li:hover{
+    	background: #FDA800;
+    }
+    .youji_s3_text{
+    	width: 144px;
+    	height: 18px;
+    	line-height: 18px;
+    	padding: 4px 0 4px 4px;
+    	font-size: 12px;
+    	border:1px solid #dedede;
+    }
+    .youji_content_div{
+    	margin-top: 30px;
+    	position: relative;
+    }
+    .youji_content_div_img{
+    	position: relative;
+    	z-index: 1;
+    	display: inline-block;
+    }
+    .youji_content_div_text{
+    	display: inline-block;
+    	vertical-align: top;
+    	margin-left: 10px;
+    }
+    .youji_content_div_text h1{
+    	font-size: 18px
+    }
+    .youji_content_div_span{
+    	padding-left: 0!important;
+    	color: #fff;
+    	height: 30px;
+    	line-height: 28px;
+    	display: block;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	text-align: center;
+    	background: url(https://gss0.bdstatic.com/8KIPcyv9KgQIm2_p8IuM_a/static/destination/widget/view/view-main/main-notes/img/scene-notes-type-icon_7457955.png);
+    	background-position: -54px -1px;
+    	background-size: 78px 31px;
+    }
+    .youji_content_div_text span{
+    	display: block;
+    	margin-top: 10px;
+    	padding: 0!important;
+    	font-size: 12px;
+    	line-height: 30px;
+    }
+    .youji_content_div_text i{
+    	display: inline-block;
+    	vertical-align: middle;
+    	margin-right: 10px;
+    	border-radius: 50%;
+    	width: 25px;
+    	height: 25px;
+    	background: url(https://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/lvpics/abpic/item/1c950a7b02087bf4c114319df7d3572c10dfcfce.jpg)no-repeat;
+    	background-size: 25px 25px
+    }
+    .youji_content_div_text p{
+    	margin-top: 10px;
+    	font-size: 12px;
+    	color: #999;
+    	line-height: 34px;
+    	width: 500px
+    }
+    .youji_content_div_span1{
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+    	font-size: 12px
+    }
+    .bottom{
+    	float: left;
+    	width: 100%;
+    	text-align: center;
+    	margin-top: 20px;
+    	font-size: 12px;
+    	color: #666
+    }
+    .bottom_s1{
+        display: inline-block;
+        vertical-align: middle;
+        width: 30px;
+        height: 20px;
+        background: url(https://gss0.bdstatic.com/8KIPcyv9KgQIm2_p8IuM_a/static/common/widget/footer/img/footer-icon_fe8640c.png)
+    }
+    .bottom_s2{
+    	margin-left: 10px;
+    	display: inline-block;
+        vertical-align: middle;
+        width: 30px;
+        height: 20px;
+        background: url(https://gss0.bdstatic.com/8KIPcyv9KgQIm2_p8IuM_a/static/common/widget/footer/img/footer-icon_fe8640c.png)no-repeat;
+        background-position: 0 -50px;
+    }
+    .bottom p{
+    	margin-top: 10px;
+    	letter-spacing:1px;
+    }
+	</style>
+</head>
+<body>
+	<div class="header">
+	   <img class="h_img" src="https://gss0.bdstatic.com/5fo3dSag_xI4khGko9WTAnF6hhy/baidu/pic/item/b58f8c5494eef01fc418b95ae3fe9925bc317d25.png">
+	   <form class="h_form">
+           <a class="h_a" href="">目的地 | 游记<span class="h_span"></span></a>
+           <input class="h_input" type="text" name="">
+           <button class="h_button"></button>
+	   </form>
+       <a class="h_alist" href="javascript::">手机号查订单</a>
+       <a class="h_alist" href="javascript::">注册</a>
+       <a class="h_alist" href="javascript::">登录</a>
+	</div>
+	<div class="floor_one">
+           <a class="f_o_a" href="javascript::">首页</a>
+           <a class="f_o_a" href="javascript::">目的地攻略<span class="arrow"></span></a>
+           <a class="f_o_a" href="javascript::">行程计划</a>
+           <a class="f_o_a" href="javascript::">游记 画册</a>
+           <a class="f_o_a" href="javascript::">我是天才</a>
+           <a class="f_o_a" href="javascript::">我是神<span class="arrow"></span></a>
+           <a class="f_r_a" href="javascript::"><span class="iconfont icon-logistic"></span>手机应用</a>
+           <a class="f_r_a" href="javascript::"><span class="iconfont icon-logistic"></span>免费兑换</a>
+	</div>
+	<div class="floor_two">
+           <p class="floor_t_p">百度旅游 <i class="iconfont icon-jiantouyou"></i> 目的地攻略 <i class="iconfont icon-jiantouyou"></i> 中国 <i class="iconfont icon-jiantouyou"></i> 江苏 <i class="iconfont icon-jiantouyou"></i> 苏州</p>
+           <span class="suzhou">苏州</span>
+           <span class="sz">suzhou</span>
+           <div class="floor_two_wrap">
+           <a class="floor_two_a" href="javascript::"><i class="circleo iconfont icon-circle"></i><i class="icon-logistic iconfont floor_t_to"></i></a>
+           <a class="floor_two_a" href="javascript::"><i class="circlet iconfont icon-circle"></i><i class="icon-dizhiguanli iconfont floor_t_to"></i></a>
+           <a class="floor_two_a" href="javascript::"><i class="circlef iconfont icon-circle"></i><i class="icon-dizhiguanli iconfont floor_t_to"></i></a>
+           </div>
+	</div>
+	<div class="content_header">
+           <span>折扣路线</span>
+           <span>行程计划<i class="iconfont icon-re"></i></span>
+           <span>景点<i class="iconfont icon-shu"></i></span>
+	</div>
+    <div class="aside">123</div>
+	<div class="artical">
+	
+	<div class="imgg">
+	    <div class="img_wrap">
+           <img src="https://gss0.baidu.com/6b1IcTe9R1gBo1vgoIiO_jowehsv/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/lvpics/pic/item/9d82d158ccbf6c810ba707c6bd3eb13533fa400f.jpg">
+           <img src="https://gss0.baidu.com/6b1IcTe9R1gBo1vgoIiO_jowehsv/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/lvpics/pic/item/0eb30f2442a7d93362f2eed2ad4bd11373f0013c.jpg">
+           <img src="https://gss0.baidu.com/6b1IcTe9R1gBo1vgoIiO_jowehsv/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/lvpics/pic/item/0824ab18972bd4073cdd3e2a7b899e510eb309ca.jpg">
+           <img src="https://gss0.baidu.com/6b1IcTe9R1gBo1vgoIiO_jowehsv/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/lvpics/pic/item/0b55b319ebc4b745fdcebdb7cffc1e178a82153c.jpg">
+           <img src="https://gss0.baidu.com/6b1IcTe9R1gBo1vgoIiO_jowehsv/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/lvpics/pic/item/faedab64034f78f0407f905279310a55b3191c1e.jpg">
+           <img src="https://gss0.baidu.com/6b1IcTe9R1gBo1vgoIiO_jowehsv/maps/services/thumbnails?width=525&height=295&quality=100&align=middle,middle&src=http://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/lvpics/pic/item/c995d143ad4bd113ddb9bd935aafa40f4bfb051e.jpg">
+        </div>
+    </div>  
+
+    <div class="about_sz">
+           <h1>about_suzhou!</h1>
+           <div class="sz_star">
+               <a href="javascript::">
+                     <i class="iconfont icon-ITquanxian"></i>
+                     2625条点评
+               </a>
+           </div>
+           <p class="sz_p">大家印象：
+                 城市很秀气，风景和人文感觉都很好。知名旅游景点非常多，苏州园林则是最有名的景点。山塘街夜景很美，很有特色，观前街很热闹小吃也多。温婉的江南水乡是一座适合生活的安逸城市。<a href="">[详细简介]</a></p>
+           <div class="sz_option">
+                     <p class="sz_option1"><i class="iconfont icon-logistic"></i>最佳季节：3-5月，9-10月...</p>
+                     <p class="sz_option1"><i class="iconfont icon-dizhiguanli"></i> 建议游玩：2-6天</p>
+                     <p class="sz_option1"><i class="iconfont icon-dizhiguanli"></i> 更多 <span class="sz_box"><span class="boxinbox"><i class="iconfont icon-gongjuxiang"></i></span>赠送IphoneX活动</span></p>
+           </div>
+    </div>  
+	</div>
+	<div class="artical_a">
+           <span class="artical_aspan">行程路线</span>
+           <span class="tr1" id="tr1">2日游</span>
+           <span class="tr1" id="tr2">3日游</span>
+           <span class="tr1">4日游</span>
+           <span class="tr1">5日游</span>
+           <span class="tr1">6日游</span>
+           <span class="tr1">特惠路线</span>
+	</div>
+	<div class="bodw">
+	<div class="tr_pic1 clearfix tr_list" id="tr_pic1">
+	    <div class="tiw1">
+	       <img src="https://gss0.bdstatic.com/6b1IcTe9RMgBo1vgoIiO_jowehsv/maps/services/thumbnails?width=260&height=145&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/b21c8701a18b87d69178c33e050828381f30fddd.jpg">
+	       <span class="tis">点击查看</span>
+	    </div>   
+	    <div class="tiw2">
+	       <h1>苏州2日经典行程</h1>
+	       <p><i class="iconfont icon-dizhiguanli"></i>苏州乐园 -苏州乐园水上世界</p>
+	    </div>  
+	    <div class="tiw3">
+           <span class="tiw3_s1" style="font-size: 12px;color: #333"><i class="iconfont icon-logistic"></i>23444</span>
+           <span class="tiw3_s2" style="font-size: 12px;color: #333"><i class="iconfont icon-logistic"></i>2</span>
+	    </div>
+	</div>
+	<div class="tr_pic2 clearfix tr_list" id="tr_pic2">
+	    <div class="tiw1">
+	       <img src="https://gss0.bdstatic.com/6b1IcTe9RMgBo1vgoIiO_jowehsv/maps/services/thumbnails?width=260&height=145&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/342ac65c10385343967a466e9213b07ecb8088cc.jpg">
+	       <span class="tis">点击查看</span>
+	    </div>   
+	    <div class="tiw2">
+	       <h1>苏州3日经典行程</h1>
+	       <span class="tiw2_s1">行程适中</span>
+	       <span class="tiw2_s2">12月出发</span>
+	       <span class="tiw2_s3">人均消费3000-5000元</span>
+	       <p><i class="iconfont icon-dizhiguanli"></i>苏州乐园 -苏州乐园水上世界</p>
+	    </div>  
+	    <div class="tiw3">
+           <span class="tiw3_s1" style="font-size: 12px;color: #333"><i class="iconfont icon-logistic"></i>23444</span>
+           <span class="tiw3_s2" style="font-size: 12px;color: #333"><i class="iconfont icon-logistic"></i>2</span>
+	    </div>
+	    <div class="tiw4">
+           <img src="https://dimg03.c-ctrip.com/images/fd/tg/g2/M07/8B/4D/Cghzf1Ww4EKAIJf0AA-a5kIApP4409_C_234_176.jpg">
+	    </div>
+	</div>
+	<div class="bodwb">
+        共1588个行程，更多天数、更多预算的选择，还有带娃带老人等个性化方案
+	</div>
+    </div>	
+    <div class="bkcg">
+                  <h1>不可错过</h1>
+                  <div class="blist_o">
+                            <a href="javascript::" class="nmb">
+                                   <span class="cnm">必玩景点排行榜</span>
+                                   <i></i>
+                            </a>
+                            <div class="blist_o_o">
+                                   <a href="javascript::" class="nmb">
+                                           <img src="https://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/lvpics/abpic/item/32fa828ba61ea8d34b37bdd1970a304e241f58ca.jpg" style="width: 230px;height: 154px;
+                                           margin: -30px 0 0 0;transition: all .3s">
+                                           <span id="blist_o_o_s">1</span>
+                                           <span id="blist_o_o_s2">特价门票￥115</span>
+                                   </a>
+                                   <div class="blist_o_od">
+                                           <p>周庄</p>
+                                           <span>38455想去</span>
+                                   </div>
+                                   <a href="javascript::" class="nmb">
+                                           <img src="https://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/lvpics/abpic/item/4bed2e738bd4b31c765581f486d6277f9e2ff810.jpg" style="width: 230px;height: 154px;
+                                           margin: -30px 0 0 0;transition: all .3s"> 
+                                           <span id="blist_o_o_s">2</span>
+                                           <span id="blist_o_o_s2">特价门票￥80</span> 
+                                   </a>
+                                   <div class="blist_o_od">
+                                           <p>周庄</p>
+                                           <span>38455想去</span>
+                                   </div>
+                                   <a href="javascript::" class="nmb">
+                                           <img src="https://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/lvpics/abpic/item/b21c8701a18b87d69178c33e050828381f30fddd.jpg" style="width: 230px;height: 154px;
+                                           margin: -30px 0 0 0;transition: all .3s"> 
+                                           <span id="blist_o_o_s">3</span>
+                                           <span id="blist_o_o_s2">特价门票￥58</span> 
+                                   </a>
+                                   <div class="blist_o_od">
+                                           <p>周庄</p>
+                                           <span>38455想去</span>
+                                   </div>
+                            </div> 
+                            <span class="blist_o_o_next">
+                                 查看全部738个景点 >
+                            </span>
+                  </div>
+                  <div class="blist_t"></div>
+                  <div class="blist_tt"></div>
+    </div>
+    <div class="lxhc">
+        <div class="lxhc_wrap">
+             <h1 class="lxhc_h1" style="font-weight: normal;display: inline-block;">旅行画册</h1>    
+             <span class="lxhc_span" style="display: inline-block;">查看全部5729篇 ></span> 
+             <span class="lxhc_spant">
+                   <i class="iconfont icon-daohang"></i>发画册
+             </span>
+        </div>     
+    </div>
+    <div class="lxhc_pic">
+        <div class="lxhc_pic1" id="lxhc_pic1">
+             <img src="https://gss0.bdstatic.com/6b1IcTe9RMgBo1vgoIiO_jowehsv/maps/services/thumbnails?width=260&height=145&quality=100&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/8601a18b87d6277ff78dafb12d381f30e824fc98.jpg">
+             <span class="lxhc_pic1_s" id="lxhc_pic1_s"> <i class="iconfont icon-gongjuxiang"></i>  38</span>
+             <span class="lxhc_pic1_sc" id="lxhc_pic1_sc"><i class="iconfont icon-gongjuxiang"></i>点击查看38个景点</span>
+             <div class="lxhc_text1">
+                     <img src="https://gss0.baidu.com/7LsWdDW5_xN3otqbppnN2DJv/lvpics/abpic/item/c9fcc3cec3fdfc03603b010fd73f8794a5c226c2.jpg">
+                     <p class="lxhc_p">【行摄江苏】苏州启园...</p>
+                     <span class="lxhc_s">1天 2015/06/07出发 82322</span>
+             </div>
+        </div>
+    </div>
+    <div class="youji_last"> 共5587篇精美画册，文艺范儿、小清新、摄影达人，高清哟>
+    </div>
+    <div class="youji">
+<div class="youji_wrap">
+             <h1 class="lxhc_h1" style="font-weight: normal;display: inline-block;">游记</h1>    
+             <span class="lxhc_span" style="display: inline-block;">查看全部2527篇 ></span> 
+             <span class="lxhc_spant">
+                   <i class="iconfont icon-daohang"></i>写游记
+             </span>
+        </div>  
+    </div>
+    <div class="youji_content">
+             <span class="youji_s1">游记筛选</span>
+             <span class="youji_s2">start time  <i class="youji_s2_i"></i><ul class="youji_s2_ul">
+                     <li>1-2</li>
+                     <li>3-5</li>
+                     <li>6-10</li>
+                     <li>11-12</li>
+             </ul></span>
+             <span class="youji_s2">traveal dy <i class="youji_s2_i"></i><ul class="youji_s2_ul">
+                     <li>1-2</li>
+                     <li>3-5</li>
+                     <li>6-10</li>
+                     <li>11-12</li>
+             </ul></span>
+             <span class="youji_s3">
+                     <input type="text" name="text" class="youji_s3_text" placeholder="entercontent">
+             </span>
+             <span class="youji_s4">
+                     <input type="radio" name="radio">  justlookbeauty
+             </span>
+             <span class="youji_s5">
+                     <input type="radio" name="radio">  new
+             </span>
+             <div class="youji_content_div">
+                  <div class="youji_content_div_img">
+                     <img src="https://gss0.bdstatic.com/6b1IcTe9RMgBo1vgoIiO_jowehsv/maps/services/thumbnails?width=215&height=145&quality=120&align=middle,middle&src=http://hiphotos.baidu.com/lvpics/pic/item/4b90f603738da977fed484b7b951f8198718e3b7.jpg">
+                     <span class="youji_content_div_span">GD</span>
+                  </div>
+                  <div class="youji_content_div_text">
+                     <h1>dream suzhou,impress suzhou</h1>
+                     <span><i></i>Travel: Wuhan - Suzhou date: 01 months 2015: 12 days budget: 1000-3000 (yuan)</span>
+                     <p>Suzhou, is a unique city. She has a quiet landscape in the noisy, noisy road. She has a slow, hurried office worker passing the leisurely tea drinking elderly. She has modern classical buildings, small tall buildings.</p>
+                  </div>
+                  <span class="youji_content_div_span1"><i class="iconfont icon-daohang"></i>123123<i class="iconfont icon-circle"></i>222</span>
+             </div>
+    </div>
+    <div class="bottom">
+             <span class="bottom_s1"></span>Focus on micro-blog
+             <span class="bottom_s2"></span>Download APP
+             <p>©2017Baidu使用百度前必读百度旅游用户协议联系我们友情链接</p>
+    </div>
+</body>
+<script type="text/javascript">
+        var lxhc_pic1_s = document.getElementById('lxhc_pic1_s');
+        var lxhc_pic1 = document.getElementById('lxhc_pic1');
+        var lxhc_pic1_sc = document.getElementById('lxhc_pic1_sc');
+        lxhc_pic1.onmousemove = function(){
+        	        lxhc_pic1.style.cursor = 'pointer';
+                    lxhc_pic1_s.style.display = 'none';
+                    lxhc_pic1_sc.style.display = 'block'
+        };
+        lxhc_pic1.onmouseout = function(){
+                    lxhc_pic1_s.style.display = 'block';
+                    lxhc_pic1_sc.style.display = 'none'
+        };
+        var tr1 = document.getElementById('tr1');
+        tr1.onmousemove = function(){
+        	var tr_list = document.getElementsByClassName('tr_list');
+        	for(var i = 0 ; i < tr_list.length ; i++){
+        		tr_list[i].style.display = 'none'
+        	}
+        	document.getElementById('tr_pic1').style.display = 'block'
+        };
+    
+        var tr2 = document.getElementById('tr2');
+        tr2.onmousemove = function(){
+        	var tr_list = document.getElementsByClassName('tr_list');
+        	for(var i = 0 ; i < tr_list.length ; i++){
+        		tr_list[i].style.display = 'none'
+        	}
+        	document.getElementById('tr_pic2').style.display = 'block'
+        };
+</script>
+</html>
